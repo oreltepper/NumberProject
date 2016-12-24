@@ -34,7 +34,6 @@ function ApplicationControllerView(ApplicationController){
 
 	 self.html.innerHTML = `	<div class="loader" id="loaderBar"></div><div class="input"><button id ="ProvidersButton" class="ProvidersButton" style="vertical-align:middle"> <span>Let's Roll The Dice</span></button></div> <fieldset class="numberFacts">
                   <legend>`+'Numbers Facts:'+`</legend></fieldset>`;
-	  // if 	ApplicationController.
 		var dataListView = new DataControllerView(ApplicationController.list);
 		var fset = self.html.querySelector('.numberFacts');
 		fset.appendChild(dataListView.html);
