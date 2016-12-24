@@ -4,7 +4,7 @@ function ApplicationController(){
 	this.newItemLabel;
 
 	this.addItem = function(value){
-		var newItem = new Data(value);
+		var newItem = new Information(value);
 		this.list.addItem(newItem);
 	};
 

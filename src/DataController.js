@@ -30,7 +30,7 @@ function DataControllerView(DataController){
 	function renderItems(ul){
 		for(var i=0; i<DataController.dataItemList.length; i++){
 			var dataFact = DataController.dataItemList[i];
-			var dataFactView = new DataView(dataFact);
+			var dataFactView = new InformationView(dataFact);
 			ul.appendChild(dataFactView.html);
 		}
 	}
@@ -56,7 +56,7 @@ function FavoriteListViewShow(dataList){
 	function renderItems(ul){
 		for(var i=0; i<dataList.dataItemList.length; i++){
 			var data = dataList.dataItemList[i];
-			var dataView = new DataFavView(data);
+			var dataView = new InformationFavView(data);
 					ul.appendChild(dataView.html);
 
 		}

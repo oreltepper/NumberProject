@@ -21,7 +21,7 @@ function FavoriteListView(favoriteController){
 	function render(){
 
 			self.html.innerHTML = `<fieldset class="numberFavorites" id="numberFavorites">
-										 <legend>`+"Numbers Favorites:"+`</legend></fieldset>`;
+										 <legend>`+"Favorites Numbers:"+`</legend></fieldset>`;
 			var list =self.html.querySelector('.numberFavorites');
 			var favoriteListViewDisplay =new FavoriteListViewShow(favoriteController.list);
 			list.appendChild(favoriteListViewDisplay.html);

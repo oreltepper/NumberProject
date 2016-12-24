@@ -1,5 +1,5 @@
 
-function Data(label){
+function Information(label){
 	this.label = label;
 	this.number=label.substring(0, (label.indexOf(" ")));
 	this.number = parseInt(this.number);
@@ -17,7 +17,7 @@ function Data(label){
 	};
 }
 
-function DataView(dataFact){
+function InformationView(dataFact){
 	var template,
 		self = this,
 		button;
@@ -46,7 +46,7 @@ function DataView(dataFact){
 
 
 
-function DataFavView(dataFact){
+function InformationFavView(dataFact){
 	var template,
 		self = this;
 
